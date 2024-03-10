@@ -9,7 +9,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name:  Build docker compose
-        run: docker-compose up -d app-test testingdb redistestdb
+        run: docker-compose up -d app-test testingdb
       - name: Check lint
         run: make check_lint
       - name: Run tests
