@@ -1,7 +1,7 @@
 import asyncio
 
 import aioredis
-
+#adding redis
 redis = aioredis.from_url(
     "redis://localhost",
     decode_responses=True,
